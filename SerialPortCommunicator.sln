@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialPortCommunicator.Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialPortCommunicator.Examples", "SerialPortCommunicator.Examples\SerialPortCommunicator.Examples.csproj", "{069BBCFD-67C9-46ED-9906-023CBBB39FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialPortCommunicator.VirtualSerialPortDeviceEmulator", "SerialPortCommunicator.VirtualSerialPortDeviceEmulator\SerialPortCommunicator.VirtualSerialPortDeviceEmulator.csproj", "{74490B93-211E-4A07-A1B7-6DE08E8B7E6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialPortCommunicator.VirtualSerialPortDeviceEmulator", "SerialPortCommunicator.VirtualSerialPortDeviceEmulator\SerialPortCommunicator.VirtualSerialPortDeviceEmulator.csproj", "{74490B93-211E-4A07-A1B7-6DE08E8B7E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

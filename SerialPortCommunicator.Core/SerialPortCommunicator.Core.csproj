@@ -4,7 +4,33 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>SerialPortCommunicator</PackageId>
+    <Title>Serial Port Communicator</Title>
+    <Product>SerialPortCommunicator</Product>
+    <Description>SerialPortCommunicator is a lightweight and efficient library designed for seamless communication over serial ports. It simplifies sending and receiving messages with support for asynchronous operations, configurable timeouts, and custom message handling. Ideal for building reliable, non-blocking serial port applications.</Description>
+    <Copyright>Copyright © Ahmet Gundogdu All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/hmetgundogdu/SerialPortCommunicator</PackageProjectUrl>
+    <PackageIcon>SerialCommunicatorLogo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/hmetgundogdu/SerialPortCommunicator</RepositoryUrl>
+    <PackageTags>Serial port</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\SerialCommunicatorLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.IO.Ports" Version="9.0.0" />
