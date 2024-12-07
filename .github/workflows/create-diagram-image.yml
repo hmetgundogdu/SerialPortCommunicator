@@ -1,0 +1,30 @@
+name: Convert Draw.io to SVG
+on:
+  push:
+    paths:
+      - 'docs/'
+
+jobs:
+  convert-drawio:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y draw.io
+
+    - name: Convert Draw.io to SVG
+      run: |
+        drawio --export --format svg --output docs/SerialCommunicatorDiagram.svg docs/SerialCommunicatorDiagram.drawio
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add docs/diagram.svg
+        git commit -m "Auto-update SVG from Draw.io"
+        git push
