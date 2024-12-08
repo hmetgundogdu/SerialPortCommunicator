@@ -2,9 +2,8 @@ name: Convert Draw.io to SVG
 on:
   push:
     paths:
-      - 'docs/*.drawio'
+      - 'docs/SerialCommunicatorDiagram.drawio'
   workflow_dispatch:
-
 jobs:
   convert-drawio:
     runs-on: ubuntu-latest
