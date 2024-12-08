@@ -2,7 +2,8 @@ name: Convert Draw.io to SVG
 on:
   push:
     paths:
-      - 'docs/'
+      - 'docs/*.drawio'
+  workflow_dispatch:
 
 jobs:
   convert-drawio:
