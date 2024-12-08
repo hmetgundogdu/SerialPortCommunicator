@@ -22,12 +22,12 @@ jobs:
 
     - name: Convert Draw.io to SVG using Xvfb
       run: |
-        xvfb-run drawio --export --format svg --output docs/SerialCommunicatorDiagram.svg docs/SerialCommunicatorDiagram.drawio
+        xvfb-run drawio --export --format svg --output Docs/SerialCommunicatorDiagram.svg Docs/SerialCommunicatorDiagram.drawio
 
     - name: Commit and push changes
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add docs/diagram.svg
+        git add Docs/SerialCommunicatorDiagram.svg
         git commit -m "Auto-update SVG from Draw.io"
         git push
