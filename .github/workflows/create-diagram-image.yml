@@ -15,8 +15,8 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        wget https://github.com/jgraph/drawio-desktop/releases/download/v21.4.0/draw.io-amd64-21.4.0.deb
-        sudo dpkg -i draw.io-amd64-21.4.0.deb
+        wget https://github.com/jgraph/drawio-desktop/releases/download/v25.0.2/drawio-amd64-25.0.2.deb
+        sudo dpkg -i drawio-amd64-25.0.2.deb
         sudo apt-get install -f
 
     - name: Convert Draw.io to SVG
