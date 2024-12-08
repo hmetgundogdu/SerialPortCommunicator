@@ -22,7 +22,7 @@ jobs:
 
     - name: Convert Draw.io to SVG using Xvfb
       run: |
-        xvfb-run drawio --export --format svg --output Docs/SerialCommunicatorDiagram.svg Docs/SerialCommunicatorDiagram.drawio
+        xvfb-run drawio --export --format svg --background "#FFFFFF" --output Docs/SerialCommunicatorDiagram.svg Docs/SerialCommunicatorDiagram.drawio
 
     - name: Commit and push changes
       run: |
