@@ -15,8 +15,9 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y nodejs npm
-        npm install -g @hediet/graphviz-cli
+        wget https://github.com/jgraph/drawio-desktop/releases/download/v21.4.0/draw.io-amd64-21.4.0.deb
+        sudo dpkg -i draw.io-amd64-21.4.0.deb
+        sudo apt-get install -f
 
     - name: Convert Draw.io to SVG
       run: |
