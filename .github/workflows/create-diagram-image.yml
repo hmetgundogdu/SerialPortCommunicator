@@ -12,9 +12,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Convert Draw.io to SVG using Docker
+    - name: Install dependencies
       run: |
-        docker run --rm -v $(pwd):/data ghcr.io/jgraph/drawio:latest drawio --export --format svg --output /data/docs/SerialCommunicatorDiagram.svg /data/docs/SerialCommunicatorDiagram.drawio
+        sudo apt-get update
+        sudo apt-get install -y xvfb libgtk2.0-0 libgdk-pixbuf2.0-0 libxss1
+        wget https://github.com/jgraph/drawio-desktop/releases/download/v21.4.0/draw.io-amd64-21.4.0.deb
+        sudo dpkg -i draw.io-amd64-21.4.0.deb
+        sudo apt-get install -f
+
+    - name: Convert Draw.io to SVG using Xvfb
+      run: |
+        xvfb-run drawio --export --format svg --output docs/SerialCommunicatorDiagram.svg docs/SerialCommunicatorDiagram.drawio
 
     - name: Commit and push changes
       run: |
