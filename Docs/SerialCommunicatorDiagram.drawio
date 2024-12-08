@@ -88,18 +88,6 @@
         <mxCell id="ZBFJD08WCHcWqZldoDUF-19" value="Process&amp;nbsp;&lt;div&gt;Loop&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="455" y="170" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bfiiD2CVPl-vrcZTkpAS-3" value="." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="20" y="10" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="bfiiD2CVPl-vrcZTkpAS-4" value="." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="860" y="20" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="bfiiD2CVPl-vrcZTkpAS-5" value="." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="20" y="460" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="bfiiD2CVPl-vrcZTkpAS-6" value="." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="850" y="460" width="30" height="30" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
