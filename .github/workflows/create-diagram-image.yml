@@ -20,6 +20,10 @@ jobs:
         sudo dpkg -i drawio-amd64-25.0.2.deb
         sudo apt-get install -f
 
+    - name: "Remove installation files"
+      run: |
+        rm drawio-amd64-25.0.2.deb
+
     - name: Convert Draw.io to SVG using Xvfb
       run: |
         xvfb-run drawio --export --format svg --background "#FFFFFF" --output Docs/SerialCommunicatorDiagram.svg Docs/SerialCommunicatorDiagram.drawio
