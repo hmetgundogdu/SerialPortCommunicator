@@ -2,7 +2,7 @@ name: Convert Draw.io to SVG
 on:
   push:
     paths:
-      - 'docs/SerialCommunicatorDiagram.drawio'
+      - 'Docs/SerialCommunicatorDiagram.drawio'
   workflow_dispatch:
 jobs:
   convert-drawio:
@@ -26,7 +26,7 @@ jobs:
 
     - name: Convert Draw.io to SVG using Xvfb
       run: |
-        xvfb-run drawio --export --format svg --output Docs/SerialCommunicatorDiagram.svg Docs/SerialCommunicatorDiagram.drawio --background #FFFFFF
+        xvfb-run drawio --export --format svg --output Docs/SerialCommunicatorDiagram.svg Docs/SerialCommunicatorDiagram.drawio
 
     - name: Commit and push changes
       run: |
