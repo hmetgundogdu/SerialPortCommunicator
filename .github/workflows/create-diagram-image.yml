@@ -15,7 +15,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y xvfb libgtk2.0-0 libgdk-pixbuf2.0-0 libxss1
+        sudo apt-get install -y xvfb libgtk2.0-0 libgdk-pixbuf2.0-0 libxss1 libnotify4
         wget https://github.com/jgraph/drawio-desktop/releases/download/v25.0.2/drawio-amd64-25.0.2.deb
         sudo dpkg -i drawio-amd64-25.0.2.deb
         sudo apt-get install -f
