@@ -21,7 +21,7 @@ var result = await _communicator.RequestAsync("test-command");
 Console.WriteLine(result);
 
 ``` 
-You can also check out [example project](https://github.com/hmetgundogdu/SerialPortCommunicator/blob/main/SerialPortCommunicator.Examples/Program.cs").
+You can also check out [example project](https://github.com/hmetgundogdu/SerialPortCommunicator/blob/main/SerialPortCommunicator.Examples/Program.cs).
 
 ## Library Workflow Diagram
 
