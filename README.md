@@ -7,7 +7,7 @@ This library was created to solve these problems. It makes serial communication 
 ## Example
 
 ```csharp
- var SerialPortCommunicatorClient _communicator = new(
+ var _communicator = new SerialPortCommunicatorClient(
             new SerialPort("COM1", 9600, Parity.None, 8, StopBits.One),
             new SerialPortCommunicatorOptions
             {
